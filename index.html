@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- CSS propio -->
     <link rel="stylesheet" href="estilos.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 
 </head>
 <body>
@@ -31,8 +33,8 @@
                     <!-- Secciones -->
                     <ul class="navbar-nav mx-auto secciones_nav font2">
                         <li class="nav-item"><a class="nav-link" href="#menu_onepage">MENÚ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#intro_cards">QUIENES SOMOS</a></li>
                         <li class="nav-item"><a class="nav-link" href="#info_contacto">CONTACTO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#intro_cards">QUIENES SOMOS</a></li>
                         <li class="nav-item"><a class="nav-link" href="#carrusel">GALERÍA</a></li>
                     </ul>
 
@@ -63,7 +65,7 @@
             <div class="row align-items-end hero_home">
                 <div class="text-center botones_hero">
                     <button type="button" onclick="document.location='#menu_onepage'" class="btn_hero btn btn-lg px-4 gap-3">VER MENÚ</button>
-                    <button type="button" id="reservarBtn" class="btn_hero btn btn-lg px-4 gap-3">RESERVAR MESA</button>
+                    <button type="button" id="reservarBtn" class="btn_hero btn btn-lg px-4 gap-3 animate__animated animate__pulse animate__infinite">RESERVAR MESA</button>
                 </div>
             </div>
         </div>
@@ -71,15 +73,164 @@
 
     <section id="menu_onepage">
         <div class="container">
-            <div class="row menu_home">
-                <div class="col titulos_menu">
-                    COMIDA
+            <div class="row">
+                <div class="col">
+                    <div class="accordion" data-bs-theme="dark" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header titulos_menu">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            COMIDAS</button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <div class="row menu_home">
+                                        <div class="col-12 subtitulos_menu">RACIONES</div>
+                                        <div class="col-xl-6 col-md-6 texto_menu">
+                                            <p>MOLLEJA<br> + sweet chilli + miso + choclo + akusai + cilantro</p>
+                                        </div>
+                                        <div class="col-xl-6 col-md-6 texto_menu">
+                                            <p>KATSUSANDO<br> + pan brioche + bife + tonkatsu + mayo japonesa</p>
+                                        </div>
+                                        <div class="col-xl-6 col-md-6 texto_menu">
+                                            <p>PESCA BLANCA<br> + espinacas + boniato + curry + berberechos</p>
+                                        </div>
+                                        <div class="col-xl-6 col-md-6 texto_menu">
+                                            <p>TATAKI DE BIFE<br> + yema + wasabi + shiso</p>
+                                        </div>
+                                        <div class="col-xl-6 col-md-6 texto_menu">
+                                            <p>KARA-GE (pollo frito)<br> + salsa verde + papas + limón</p>
+                                        </div>
+                                        <div class="col-xl-6 col-md-6 texto_menu">
+                                            <p>RABO ESTOFADO<br>+ arroz</p>
+                                        </div>
+                                        <div class="col-xl-6 col-md-6 texto_menu">
+                                            <p>GIRGOLAS<br> + girgolas + puré de coliflor y tofu + <br> oreja de judas + arveja + salsa de hongos</p>
+                                        </div>
+                                        <div class="col-xl-6 col-md-6 texto_menu">
+                                            <p>VALVAS (sujeto a disponibilidad)<br>+ tomate + chilli gar + leche de coco + <br> tostada c/ manteca de boquerón</p>
+                                        </div>
+                                        <div class="col-xl-6 col-md-6 texto_menu">
+                                            <p>ARROZ<br>(porción)</p>
+                                        </div>
+                                        <div class="col-xl-6 col-md-6 texto_menu">
+                                            <p>KIMCHI</p>
+                                        </div>
+                                        <div class="col-12 subtitulos_menu">PARA COMPARTIR</div>
+                                        <div class="col-xl-6 col-md-6 texto_menu">
+                                            <p>OJO DE BIFE<br> + arroz + wakame + lechuga + ssamjang</p>
+                                        </div>
+                                        <div class="col-xl-6 col-md-6 texto_menu">
+                                            <p>ARROZ FRITO PICANTE<br>+ panceta + camarón + langostino + calamar</p>
+                                        </div>
+                                        <div class="col-xl-6 col-md-6 texto_menu">
+                                            <p>CURRY DE TERNERA Y PEPINO<br> + arroz (opción vegetariana)</p>
+                                        </div>
+                                        <div class="col-xl-6 col-md-6 texto_menu">
+                                            <p>BAOS CON PANCETA<br> + pickles + aromáticas + mayo gochujang + <br> sweet chilli + tofu (opción vegetariana)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header titulos_menu">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            BEBIDAS
+                            </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <div class="row menu_home">
+                                    <div class="col-12 subtitulos_menu">TRAGOS</div>
+                                    <div class="col-xl-6 col-md-6 texto_menu">
+                                        <p>MANUELITA LA LOCA<br>jameson + martini rosso + soju + angostura + gochugaru (opción chivas mizunara)</p>
+                                    </div>
+                                    <div class="col-xl-6 col-md-6 texto_menu">
+                                        <p>EL CAPO DE LA BARRA<br>fernet branca + ananá + salsa de ostras + limón</p>
+                                    </div>
+                                    <div class="col-xl-6 col-md-6 texto_menu">
+                                        <p>TINTO-RERIA<br>vino tinto + martini rosso + tamarindo + tónica</p>
+                                    </div>
+                                    <div class="col-xl-6 col-md-6 texto_menu">
+                                        <p>BLANQUITO<br>sernova + wasabi + limón + ananá + vino blanco</p>
+                                    </div>
+                                    <div class="col-xl-6 col-md-6 texto_menu">
+                                        <p>TAKECHI KITANO<br>bombay + lychee + limón + vino tinto</p>
+                                    </div>
+                                    <div class="col-xl-6 col-md-6 texto_menu">
+                                        <p>PEDRO PIÑA<br>ron + licor de durazno + coco + ananá</p>
+                                    </div>
+                                    <div class="col-xl-6 col-md-6 texto_menu">
+                                        <p>GIN TONIC<br>bombay + apóstoles</p>
+                                    </div>
+                                    <div class="col-xl-6 col-md-6 texto_menu">
+                                        <p>CERVEZA STELLA / <br> CERVEZA ASIÁTICA</p>
+                                    </div>
+                                    <div class="col-12 subtitulos_menu">SIN ALCOHOL</div>
+                                    <div class="col-xl-6 col-md-6 texto_menu">
+                                        <p>AGUA MINERAL</p>
+                                    </div>
+                                    <div class="col-xl-6 col-md-6 texto_menu">
+                                        <p>SODA</p>
+                                    </div>
+                                    <div class="col-xl-6 col-md-6 texto_menu">
+                                        <p>GASEOSA</p>
+                                    </div>
+                                    <div class="col-xl-6 col-md-6 texto_menu">
+                                        <p>CAFÉ / TÉ</p>
+                                    </div>
+                                    <div class="col-xl-6 col-md-6 texto_menu">
+                                        <p>JUANCITO NO TOMA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header titulos_menu">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            DULCES
+                            </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <div class="row menu_home">
+                                    <div class="col-xl-6 col-md texto_menu">
+                                        <p>FLAN<br>+ miso + crema</p>
+                                    </div>
+                                    <div class="col-xl-6 col-md texto_menu">
+                                        <p>CHOCOLATE<br>choco negro/blanco + wasabi + katsuobushi + togarashi + lima</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col subtitulos_menu">
-                    COMIDA
+            </div>
+        </div>
+    </section>
+
+
+    <section id="info_contacto">
+        <div class="container box_general">
+            <div class="row align-items-center box_contacto1">
+                <div class="col-xl-4 text-center p-2">
+                    <h5>Dirección</h5>
+                    <p>Thames 1810, Palermo, CABA.</p>
                 </div>
-                <div class="col-xl-3 col-lg-2 img_arcade d-none d-xxl-block">
-                    <img src="" alt="">
+                <div class="col-xl-4 text-center p-2">
+                    <h5>Horarios</h5>
+                    <p>Martes a viernes de 20 a 00 hs.</p>
+                </div>
+                <div class="col-xl-4 text-center p-2">
+                    <h5>Reservá tu mesa</h5>
+                    <a id="reservarBtn2" href="#">2129-5028 / ninogordo.meitre.com</a>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col img_mapa" id="map">
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1N2tFhYvK_43nkOtVc7NtijMuq5giL0g&ehbc=2E312F&noprof=1" class="img_mapa" width="100%" height="314"></iframe>
                 </div>
             </div>
         </div>
@@ -87,51 +238,38 @@
 
     <section id="intro_cards">
         <div class="container">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="container_luces1">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title font1">LA COCINA</h5>
-                                <p class="card-text font2 p-3">En niño gordo se conjugan platos de cocina coreana, china, vietnamita y thai, con un toque local. Fusionamos ingredientes de sabores milenarios con un toque argentino. <br> <br> Nuestras cartas rotan en períodos cortos, incluyendo nuevos platos para poder representar la riqueza de esta cocina. </p>
-                            </div>
-                            <button type="button" id="reservarBtn" class="btn_hero btn btn-lg px-4 gap-3" >
-                                <a href="#descripcion">RESERVAR MESA</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="container_luces2">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title font1">NIÑO GORDO</h5>
-                                <p class="card-text font2 p-3">Niño Gordo es una parrilla asiática que propone un mix de sabores de Oriente unidos a la comida porteña. Ofrecemos una experiencia gastronómica única, en un ambiente que combina intimidad y misterio con el espíritu lúdico de la cultura pop. <br> <br> Es un restaurante que se podría visitar en cualquier región de Asia, pero que por casualidad y por una cuestión de gusto y de sabores, nació en Palermo.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="container_luces3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title font1">LA COCTELERÍA</h5>
-                                <p class="card-text font2 p-3">El estilo de nuestra coctelería es una fusión de sabores y aromas asiáticos. <br> <br> Trabajamos con los métodos Tiki y clásicos. Utilizamos licores y destilados provenientes de Asia como Sake, Soshu, licor con extracto de bambú, destilado de raíz de Ginseng, makgeolli y whisky japonés.
-                                    </p>
-                            </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="info_contacto">
-        <div class="container">
             <div class="row">
-                <div class="col-xl-8 col-md-6 tel_contacto"></div>
-                <div class="col-xl-4 col-md-6 img_mapa" id="map">
-                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1N2tFhYvK_43nkOtVc7NtijMuq5giL0g&ehbc=2E312F&noprof=1" class="img_mapa" width="100%" height="314"></iframe>
+                <div class="col-xl-4 col-md-12 mb-4">
+                    <div class="container_luces1">
+                        <div class="card" id="card1">
+                            <h2 class="card-title font1">LA COCINA</h2>
+                            <p class="card-text font2 p-3">En niño gordo se conjugan platos de cocina coreana, china, vietnamita y thai, con un toque local.</p>
+                            <p class="hidden-content">Fusionamos ingredientes de sabores milenarios con un toque argentino. Nuestras cartas rotan en períodos cortos, incluyendo nuevos platos para poder representar la riqueza de esta cocina.</p>
+                            <button class="btn-mostrar" onclick="toggleContent('card1')">Leer más</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-12 mb-4">
+                    <div class="container_luces2">
+                        <div class="card" id="card2">
+                            <h2 class="card-title font1">NIÑO GORDO</h2>
+                            <p class="card-text font2 p-3">Niño Gordo es una parrilla asiática que propone un mix de sabores de Oriente unidos a la comida porteña.</p>
+                            <p class="hidden-content">Ofrecemos una experiencia gastronómica única, en un ambiente que combina intimidad y misterio con el espíritu lúdico de la cultura pop. Es un restaurante que se podría visitar en cualquier región de Asia, pero que por casualidad y por una cuestión de gusto y de sabores, nació en Palermo.</p>
+                            <button class="btn-mostrar" onclick="toggleContent('card2')">Leer más</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-12 mb-4">
+                    <div class="container_luces3">
+                        <div class="card" id="card1">
+                            <div class="card" id="card3">
+                                <h2 class="card-title font1">LA COCTELERÍA</h2>
+                                <p class="card-text font2 p-3">El estilo de nuestra coctelería es una fusión de sabores y aromas asiáticos.</p>
+                                <p class="hidden-content">Trabajamos con los métodos Tiki y clásicos. Utilizamos licores y destilados provenientes de Asia como Sake, Soshu, licor con extracto de bambú, destilado de raíz de Ginseng, makgeolli y whisky japonés.</p>
+                                <button class="btn-mostrar" onclick="toggleContent('card3')">Leer más</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -142,40 +280,49 @@
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="3500">
                     <div class="row" id="mod_carrusel">
-                        <div class="col-xl-4 col-md-6 col-sm-12 carr_1">
+                        <div class="col-xl-3 col-md-6 col-sm-12">
                             <img src="./img/1.png" class="img-fluid">
                         </div>
-                        <div class="col-xl-4 col-md-6 d-none d-md-block carr_2">
+                        <div class="col-xl-3 col-md-6 d-none d-md-block">
                             <img src="./img/2.png" class="img-fluid">
                         </div>
-                        <div class="col-xl-4 d-none d-xl-block carr_3">
+                        <div class="col-xl-3 d-none d-xl-block">
                             <img src="./img/3.png" class="img-fluid">
                         </div>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3500">
-                    <div class="row" id="mod_carrusel">
-                        <div class="col-xl-4 col-md-6 col-sm-12 carr_1">
+                        <div class="col-xl-3 d-none d-xl-block">
                             <img src="./img/4.png" class="img-fluid">
                         </div>
-                        <div class="col-xl-4 col-md-6 d-none d-md-block carr_2">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3500">
+                    <div class="row" id="mod_carrusel">
+                        <div class="col-xl-3 col-md-6 col-sm-12">
                             <img src="./img/5.png" class="img-fluid">
                         </div>
-                        <div class="col-xl-4 d-none d-xl-block carr_3">
+                        <div class="col-xl-3 col-md-6 d-none d-md-block">
                             <img src="./img/6.png" class="img-fluid">
+                        </div>
+                        <div class="col-xl-3 d-none d-xl-block">
+                            <img src="./img/7.png" class="img-fluid">
+                        </div>
+                        <div class="col-xl-3 d-none d-xl-block">
+                            <img src="./img/8.png" class="img-fluid">
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="3500">
                     <div class="row" id="mod_carrusel">
-                        <div class="col-xl-4 col-md-6 col-sm-12 carr_1">
-                            <img src="./img/7.png" class="img-fluid">
-                        </div>
-                        <div class="col-xl-4 col-md-6 d-none d-md-block carr_2">
-                            <img src="./img/8.png" class="img-fluid">
-                        </div>
-                        <div class="col-xl-4 d-none d-xl-block carr_3">
+                        <div class="col-xl-3 col-md-6 col-sm-12">
                             <img src="./img/9.png" class="img-fluid">
+                        </div>
+                        <div class="col-xl-3 col-md-6 d-none d-md-block">
+                            <img src="./img/10.png" class="img-fluid">
+                        </div>
+                        <div class="col-xl-3 d-none d-xl-block">
+                            <img src="./img/11.png" class="img-fluid">
+                        </div>
+                        <div class="col-xl-3 d-none d-xl-block">
+                            <img src="./img/12.png" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -193,9 +340,34 @@
 
     <section>
         <div class="container">
-            <div class="row" id="music">
-                <div class="col-xl-6 col-md-8 spotify"></div>
-                <div class="col-xl-6 col-md-8 redes"></div>
+            <div class="row text-center" id="music">
+                <div class="col-xl-6 col-md-6 mb-5 spotify">
+                    <h5>El Niño Gordo disfruta esta música</h5>
+                    <button id="btnAbrirSpotify" class="btn btn-success">
+                        <span class="mr-2">
+                            <!-- Ícono de Spotify de Bootstrap -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
+                            </svg>
+                        </span>
+                        Abrir Spotify
+                    </button>
+                </div>
+                <div class="col-xl-6 col-md-6 mb-5" id="redes">
+                    <h5>Seguinos en redes</h5>
+                    <div class="iconos-redes">
+                        <a class="icon-link2" href="https://www.instagram.com/xniniogordox/?hl=es-la" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                            </svg>
+                        </a>
+                        <a class="icon-link2" href="https://twitter.com/xniniogordox" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -203,10 +375,10 @@
     <footer>
         <div class="container-fluid d-flex justify-content-around font2">
             <div class="row" id="mod_footer">
-                <div class="col-xl col-md footer_texto">
+                <div class="col-xl-6 col-md-6 footer_texto">
                     <h5>Niño Gordo es una marca registrada</h5>
                 </div>
-                <div class="col-xl col-md footer_texto">
+                <div class="col-xl-6 col-md-6 footer_texto">
                     <h5>Desarrollado por SLL</h5>
                 </div>
             </div>

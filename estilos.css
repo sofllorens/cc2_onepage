@@ -84,26 +84,77 @@ body {
 
 /* MENU */
 
-#menu_onepage {
-    margin: 95px;
+.accordion-item {
+    background-color: #f5f5f5; /* Puedes cambiar el color según tus preferencias */
+    border-color:#650404
 }
 
+
+/* Color del texto del acordeón cuando está cerrado */
+.accordion-button:not(.collapsed) {
+    color: #FEEFE5; /* Puedes cambiar el color según tus preferencias */
+}
+
+/* Color del texto del acordeón cuando está abierto */
+.accordion-button.collapsed {
+    color: #BC181D;
+}
+
+
+#menu_onepage {
+    margin-top: 95px;
+}
+
+
+
 .titulos_menu {
+    font-family: 'bungee';
+}
+
+.subtitulos_menu {
     background-color: #BC181D;
+    border-radius: 10px;
     color: #FEEFE5;
     font-family: 'bungee';
     text-align: center;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.texto_menu {
+    font-family: 'puffin display';
+    text-align: center;
     padding: 10px;
+    color: #1c1c1c;
 }
 
-.subtitulos_menu {}
+/* CONTACTO */
 
-.img_arcade {
-    margin-left: 20px;
-    background-color: #dfad09;
-
+#info_contacto {
+    margin-top: 95px;
 }
 
+.box_general {
+    border:2px solid #bc181e5f;
+    border-radius: 10px;
+}
+
+.box_contacto1 {
+    color: #e1e1e1;
+    font-family: 'puffin display';
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    border:1px solid #bc181e5f;
+}
+
+.img_mapa {
+    padding: 20px;
+}
+
+#reservarBtn2 {
+    text-decoration: none;
+    color: #e1e1e1;
+}
 
 /* QUIENES SOMOS */
 
@@ -119,7 +170,6 @@ body {
 .container_luces1::before {
     content: '';
     position: absolute;
-
     width: 320px;
     height: 300px; 
     background: radial-gradient(circle, rgba(109, 8, 11, 0.636) 0%, rgba(0, 0, 0, 0) 80%);
@@ -156,7 +206,6 @@ body {
 
 
 .card {
-    height: 450px;
     background: rgba(0, 0, 0, 0.051);
     backdrop-filter: blur(50px);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
@@ -168,74 +217,126 @@ body {
     color: #BC181D;
     text-align: center;
     font-size: 24px;
+    padding-top: 20px;
 }
 
 .card-text {
     color: #e1e1e1;
     font-size: 19px;
+    margin: 10px;
+    min-height: 120px;
 }
 
-/* CONTACTO */
-
-#info_contacto {
-    margin-top: 95px;
+.hidden-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    color: #e1e1e1;
+    font-family: 'puffin display';
+    font-size: 19px;
+    margin: 20px;
 }
 
-.tel_contacto {
+.btn-mostrar {
+    color: #e1e1e1;
+    border-radius: 0 0 10px 10px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.051);
+    font-family: 'puffin display';
+    font-weight: bold;
+    border-color: #bc181e40;
+}
+
+.btn-mostrar:hover {
+    color: #FEEFE5;
     background-color: #BC181D;
-    height: 314px;
-    width: 870px;
 }
 
-.img_mapa {
-
-    height: 314px;
-    margin-left: 5px;
-}
 
 /* GALERÍA */
 
-#carrusel {
-    margin-top: 150px;
-    -webkit-mask: linear-gradient(90deg,
-								transparent 0,
-								black 15% 85%,
-								transparent
-							) 0 50% / 100% calc(100% - (2 * var(--size-4))) no-repeat,
-							linear-gradient(0deg, black, black) 50% 0 / 100% var(--size-4) no-repeat,
-							linear-gradient(0deg, black, black) 50% 100% / 100% var(--size-4) no-repeat;
-
-}
 
 .img-fluid {
     border-radius: 10px;
+    transition: transform 0.3s ease; /* Agregar una transición suave */
+
 }
+
+.img-fluid:hover {
+    transform: scale(1.2); /* Aumentar el tamaño al 120% */
+}
+
+.carousel-control-prev {
+    background: rgb(28,28,28);
+    background: linear-gradient(90deg, rgba(28,28,28,1) 56%, rgba(0,0,0,0) 100%);
+}
+
+.carousel-control-next {
+    background: rgb(28,28,28);
+    background: linear-gradient(270deg, rgba(28,28,28,1) 56%, rgba(0,0,0,0) 100%);
+}
+
+/* SPOTIFY Y REDES */
 
 #music {
     margin-top: 95px;
 }
 
-.spotify {
-    background-color: #BC181D;
-    height: 250px;
+#music h5 {
+    margin-bottom: 30px;
 }
 
-.redes {
-    background-color: #dfad09;
-    height: 250px;
+.spotify {
+    color: #FEEFE5;
+}
+
+.btn-success{
+    height: 70px;
+    width: 230px;
+    border-radius: 30px;
+    font-family: 'puffin display';
+    font-size: 24px;
+    background-color: #1c1c1c;
+    border:1px solid #1d8954;
+    transition: background-color;
+    transition-duration: 1s;
+}
+
+.btn-success:hover {
+    background-color: #1d8954;
+}
+
+.bi-spotify{
+    margin-right: 10px;
+}
+
+#redes {
+    color: #FEEFE5;
+}
+
+.iconos-redes {
+    margin-top: 50px;
+}
+
+.icon-link2 {
+    color: #FEEFE5;
+    padding: 15px;
+}
+
+.icon-link2:hover {
+    color: #BC181D;
 }
 
 /* FOOTER */
 
 footer {
     background-color: #BC181D;
-    margin-top: 150px;
+    margin-top: 30px;
     height: auto;
-    padding: 10px;
 }
 
 .footer_texto h5 {
     width: 500px;
     text-align: center;
-    margin-top: 20px;
+    padding: 20px;
 }
