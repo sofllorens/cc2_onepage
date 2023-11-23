@@ -60,7 +60,7 @@ body {
 .hero_home {
     min-height: 95vh;
     object-fit: cover; /* Esto evita que el GIF se deforme */
-    background-image: linear-gradient(0deg, rgba(0,0,0,.5),rgba(0,0,0,.5)),url('/img/gif_hero.gif');
+    background-image: linear-gradient(0deg, rgba(0,0,0,.5),rgba(0,0,0,.5)),url('./img/gif_hero.gif');
     background-size: cover;
     border-radius: 5px;
     
